@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>azec.me | Code &amp; Outdoors</title>
+    <link>https://azec.me/</link>
+    
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>Centralized web presence</description>
+    <pubDate>Wed, 11 Sep 2024 05:12:10 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Using YubiKey with GitHub</title>
+      <link>https://azec.me/2021/05/11/Using-YubiKey-with-GitHub/</link>
+      <guid>https://azec.me/2021/05/11/Using-YubiKey-with-GitHub/</guid>
+      <pubDate>Tue, 11 May 2021 15:01:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;p&gt;&lt;strong&gt;TABLE OF CONTENTS&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;toc&quot;&gt;
+
+&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://azec.me/2021/05/11/Using-YubiKey-with-GitHub/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>PGP with YubiKey &amp; Keybase &amp; Protonmail</title>
+      <link>https://azec.me/2021/05/10/PGP-with-YubiKey-Keybase-Protonmail/</link>
+      <guid>https://azec.me/2021/05/10/PGP-with-YubiKey-Keybase-Protonmail/</guid>
+      <pubDate>Tue, 11 May 2021 01:30:40 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;p&gt;&lt;strong&gt;TABLE OF CONTENTS&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;toc&quot;&gt;
+
+&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://azec.me/2021/05/10/PGP-with-YubiKey-Keybase-Protonmail/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Cape Horn Trail Run - Beyond Horses</title>
+      <link>https://azec.me/2021/04/26/Cape-Horn-Trail-Run-Beyond-Horses/</link>
+      <guid>https://azec.me/2021/04/26/Cape-Horn-Trail-Run-Beyond-Horses/</guid>
+      <pubDate>Mon, 26 Apr 2021 22:48:55 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;div class=&quot;justified-gallery&quot;&gt;
+&lt;img src=&quot;/2021/04/26/Cape-Horn-Trail-Run-Beyond-Horses/columbia-from-capehorn-1.jpg&quot; class title=&quot;Cape
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://azec.me/2021/04/26/Cape-Horn-Trail-Run-Beyond-Horses/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>China trip: Tiananmen square</title>
+      <link>https://azec.me/2018/09/21/China-trip-Tiananmen-square/</link>
+      <guid>https://azec.me/2018/09/21/China-trip-Tiananmen-square/</guid>
+      <pubDate>Fri, 21 Sep 2018 17:00:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;div class=&quot;justified-gallery&quot;&gt;
+&lt;img src=&quot;/2018/09/21/China-trip-Tiananmen-square/tiannanmen.jpg&quot; class title=&quot;Tiannanmen Square
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://azec.me/2018/09/21/China-trip-Tiananmen-square/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
