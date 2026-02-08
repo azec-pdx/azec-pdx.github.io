@@ -1,0 +1,8 @@
+# robots.txt for azec.me
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://azec.me/sitemap.xml
+Sitemap: https://azec.me/atom.xml
+Sitemap: https://azec.me/rss2.xml

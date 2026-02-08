@@ -3,14 +3,77 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>azec.me | Engineering &amp; Outdoors</title>
+    <title>azec.me | Blog by Amer Zec</title>
     <link>https://azec.me/</link>
     
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
-    <description>Centralized web presence</description>
-    <pubDate>Wed, 11 Sep 2024 05:12:10 GMT</pubDate>
+    <description>Engineering, outdoors, and technology insights by Amer Zec</description>
+    <pubDate>Sun, 08 Feb 2026 01:03:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Docker CLI and API version (in)compatibility with Podman Engine</title>
+      <link>https://azec.me/2026/01/24/Docker-CLI-API-version-compatibility-with-Podman-engine/</link>
+      <guid>https://azec.me/2026/01/24/Docker-CLI-API-version-compatibility-with-Podman-engine/</guid>
+      <pubDate>Sun, 25 Jan 2026 06:22:19 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;p&gt;Ok, this should be a quick one, but it got me at least twice so far, so it’s time to note it down.&lt;br&gt;Recently I updated both Podman
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://azec.me/2026/01/24/Docker-CLI-API-version-compatibility-with-Podman-engine/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Using Podman with GPU intensive containers</title>
+      <link>https://azec.me/2026/01/24/Using-Podman-with-GPU-intensive-containers/</link>
+      <guid>https://azec.me/2026/01/24/Using-Podman-with-GPU-intensive-containers/</guid>
+      <pubDate>Sat, 24 Jan 2026 21:42:52 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;p&gt;While troubleshooting issue with Docker CLI (macOS) API version compatibility with newer versions of Podman, I have learned that the
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://azec.me/2026/01/24/Using-Podman-with-GPU-intensive-containers/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Favorite PDF tools on macOS in 2026</title>
+      <link>https://azec.me/2025/11/26/Favorite-PDF-tools-on-macOS-in-2026/</link>
+      <guid>https://azec.me/2025/11/26/Favorite-PDF-tools-on-macOS-in-2026/</guid>
+      <pubDate>Wed, 26 Nov 2025 20:57:56 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;p&gt;It is almost the end of the 2025. I got unlucky with chalazion on both eyes after hitting a gym that I guess isn’t very well maintained
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://azec.me/2025/11/26/Favorite-PDF-tools-on-macOS-in-2026/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Using YubiKey with GitHub</title>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>azec.me | Engineering &amp; Outdoors</title>
+  <title>azec.me | Blog by Amer Zec</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://azec.me/"/>
-  <updated>2024-09-11T05:12:10.184Z</updated>
+  <updated>2026-02-08T01:03:20.736Z</updated>
   <id>https://azec.me/</id>
   
   <author>
@@ -15,6 +15,109 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker CLI and API version (in)compatibility with Podman Engine</title>
+    <link href="https://azec.me/2026/01/24/Docker-CLI-API-version-compatibility-with-Podman-engine/"/>
+    <id>https://azec.me/2026/01/24/Docker-CLI-API-version-compatibility-with-Podman-engine/</id>
+    <published>2026-01-25T06:22:19.000Z</published>
+    <updated>2026-02-08T01:03:20.736Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Ok, this should be a quick one, but it got me at least twice so far, so it’s time to note it down.&lt;br&gt;Recently I updated both Podman
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://azec.me/categories/Software/"/>
+    
+      <category term="Containers" scheme="https://azec.me/categories/Software/Containers/"/>
+    
+    
+      <category term="macOS" scheme="https://azec.me/tags/macOS/"/>
+    
+      <category term="Containers" scheme="https://azec.me/tags/Containers/"/>
+    
+      <category term="Podman" scheme="https://azec.me/tags/Podman/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Using Podman with GPU intensive containers</title>
+    <link href="https://azec.me/2026/01/24/Using-Podman-with-GPU-intensive-containers/"/>
+    <id>https://azec.me/2026/01/24/Using-Podman-with-GPU-intensive-containers/</id>
+    <published>2026-01-24T21:42:52.000Z</published>
+    <updated>2026-02-08T01:03:20.737Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;While troubleshooting issue with Docker CLI (macOS) API version compatibility with newer versions of Podman, I have learned that the
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://azec.me/categories/Software/"/>
+    
+      <category term="Containers" scheme="https://azec.me/categories/Software/Containers/"/>
+    
+    
+      <category term="macOS" scheme="https://azec.me/tags/macOS/"/>
+    
+      <category term="Containers" scheme="https://azec.me/tags/Containers/"/>
+    
+      <category term="Podman" scheme="https://azec.me/tags/Podman/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Favorite PDF tools on macOS in 2026</title>
+    <link href="https://azec.me/2025/11/26/Favorite-PDF-tools-on-macOS-in-2026/"/>
+    <id>https://azec.me/2025/11/26/Favorite-PDF-tools-on-macOS-in-2026/</id>
+    <published>2025-11-26T20:57:56.000Z</published>
+    <updated>2026-01-08T06:34:20.103Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;It is almost the end of the 2025. I got unlucky with chalazion on both eyes after hitting a gym that I guess isn’t very well maintained
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tools" scheme="https://azec.me/categories/Tools/"/>
+    
+      <category term="Productivity" scheme="https://azec.me/categories/Tools/Productivity/"/>
+    
+    
+      <category term="PDF" scheme="https://azec.me/tags/PDF/"/>
+    
+      <category term="tools" scheme="https://azec.me/tags/tools/"/>
+    
+      <category term="macOS" scheme="https://azec.me/tags/macOS/"/>
+    
+      <category term="Reading" scheme="https://azec.me/tags/Reading/"/>
+    
+      <category term="FOSS" scheme="https://azec.me/tags/FOSS/"/>
+    
+  </entry>
   
   <entry>
     <title>Using YubiKey with GitHub</title>
