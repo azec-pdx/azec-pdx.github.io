@@ -62,9 +62,9 @@
         $('figure.highlight').addClass('hljs');
         $('figure.highlight .code .line span').each(function() {
             const classes = $(this).attr('class').split(/\s+/);
-            if (classes.length === 1) {
-                $(this).addClass('hljs-' + classes[0]);
-                $(this).removeClass(classes[0]);
+            for (const cls of classes) {
+                $(this).addClass('hljs-' + cls);
+                $(this).removeClass(cls);
             }
         });
 
@@ -98,6 +98,8 @@
 
         if (fold) {
             $('figure.highlight').each(function() {
+                $(this).addClass('foldable'); // add 'foldable' class as long as fold is enabled
+
                 if ($(this).find('figcaption').find('span').length > 0) {
                     const span = $(this).find('figcaption').find('span');
                     if (span[0].innerText.indexOf('>folded') > -1) {
@@ -111,10 +113,110 @@
                 toggleFold(this, fold === 'folded');
             });
 
-            $('figure.highlight figcaption .fold').click(function() {
+            $('figure.highlight figcaption .level-left').click(function() {
                 const $code = $(this).closest('figure.highlight');
                 toggleFold($code.eq(0), !$code.hasClass('folded'));
             });
+        }
+    }
+
+    if (config && config.appearance && config.appearance.enable) {
+        const appearance = config.appearance;
+        const storageKey = appearance.storageKey || 'icarus:color-scheme';
+        const defaultScheme = appearance.defaultScheme || 'light';
+        const prefersColorScheme = appearance.prefersColorScheme !== false;
+        const mediaQuery = typeof window.matchMedia === 'function' ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+        const docEl = document.documentElement;
+        const $themeToggle = $('.navbar-theme-toggle');
+        let hasStoredPreference = false;
+        let storedScheme = null;
+
+        try {
+            storedScheme = localStorage.getItem(storageKey);
+        } catch (error) {
+            storedScheme = null;
+        }
+
+        if (storedScheme === 'light' || storedScheme === 'dark') {
+            hasStoredPreference = true;
+        } else {
+            storedScheme = null;
+        }
+
+        function applyTheme(scheme, persist) { // eslint-disable-line no-inner-declarations
+            const normalized = scheme === 'dark' ? 'dark' : 'light';
+            if (docEl) {
+                docEl.dataset.theme = normalized;
+                docEl.classList.remove('theme-dark', 'theme-light');
+                docEl.classList.add('theme-' + normalized);
+            }
+            if (document.body) {
+                document.body.classList.remove('theme-dark', 'theme-light');
+                document.body.classList.add('theme-' + normalized);
+            }
+            const lightLink = document.getElementById('hljs-light-theme');
+            const darkLink = document.getElementById('hljs-dark-theme');
+            if (lightLink && darkLink) {
+                if (normalized === 'dark') {
+                    lightLink.setAttribute('disabled', 'disabled');
+                    darkLink.removeAttribute('disabled');
+                } else {
+                    darkLink.setAttribute('disabled', 'disabled');
+                    lightLink.removeAttribute('disabled');
+                }
+            }
+            $themeToggle.attr('aria-pressed', normalized === 'dark');
+            if (persist) {
+                try {
+                    localStorage.setItem(storageKey, normalized);
+                    hasStoredPreference = true;
+                    storedScheme = normalized;
+                } catch (error) {
+                    // Ignore write errors (private mode, etc.)
+                }
+            }
+        }
+
+        function getInitialScheme() { // eslint-disable-line no-inner-declarations
+            if (storedScheme) {
+                return storedScheme;
+            }
+            if (defaultScheme === 'dark') {
+                return 'dark';
+            }
+            if (defaultScheme === 'auto' && mediaQuery && prefersColorScheme) {
+                return mediaQuery.matches ? 'dark' : 'light';
+            }
+            if (defaultScheme === 'light') {
+                return 'light';
+            }
+            if (prefersColorScheme && mediaQuery && mediaQuery.matches) {
+                return 'dark';
+            }
+            return 'light';
+        }
+
+        applyTheme(getInitialScheme(), false);
+
+        if ($themeToggle.length) {
+            $themeToggle.on('click', () => {
+                const nextScheme = docEl && docEl.dataset.theme === 'dark' ? 'light' : 'dark';
+                applyTheme(nextScheme, true);
+            });
+        }
+
+        function handlePreferenceChange(event) { // eslint-disable-line no-inner-declarations
+            if (defaultScheme === 'auto' && !hasStoredPreference) {
+                applyTheme(event.matches ? 'dark' : 'light', false);
+            }
+        }
+
+        if (mediaQuery && prefersColorScheme) {
+            if (typeof mediaQuery.addEventListener === 'function') {
+                mediaQuery.addEventListener('change', handlePreferenceChange);
+            } else if (typeof mediaQuery.addListener === 'function') {
+                mediaQuery.addListener(handlePreferenceChange);
+            }
         }
     }
 

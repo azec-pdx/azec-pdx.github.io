@@ -10854,6 +10854,10 @@ article.article .content .message.message-immersive {
 article.article .content .message.message-immersive .message-body {
   border: none;
 }
+article.article .article-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
 .rtl {
   direction: rtl;
 }
@@ -10933,6 +10937,9 @@ a.article-nav-next span {
 .navbar-main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
+.navbar-main .navbar-container {
+  overflow-x: auto;
+}
 .navbar-main .navbar-menu,
 .navbar-main .navbar-start,
 .navbar-main .navbar-end {
@@ -10977,6 +10984,12 @@ a.article-nav-next span {
 }
 .navbar-logo img {
   max-height: 1.75rem;
+}
+@media screen and (min-width: 1088px) {
+  .navbar > .container .navbar-menu,
+  .container > .navbar .navbar-menu {
+    margin-right: 0rem;
+  }
 }
 @media screen and (max-width: 768px) {
   footer.footer .level-start {
@@ -11324,6 +11337,9 @@ figure.highlight .section {
   min-width: inherit;
   border-radius: inherit;
 }
+figure.highlight.foldable div.level-left {
+  cursor: pointer;
+}
 .gist table tr:hover {
   background: transparent;
 }
@@ -11551,6 +11567,9 @@ figure.highlight .section {
   line-height: inherit;
 }
 .MathJax,
+.MathJax_Display,
+.MJXc-display,
+.MathJax_SVG_Display,
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
@@ -11657,4 +11676,201 @@ figure.highlight .section {
   .section {
     padding: 1.5rem 1rem;
   }
+}
+:root {
+  --surface-primary: #fff;
+  --surface-secondary: #f7f7f7;
+  --surface-tertiary: #f0f4f8;
+  --text-primary: #1f2933;
+  --text-secondary: #4a5568;
+  --accent-color: #2563eb;
+  --accent-muted: #f97316;
+  --border-color: rgba(15,23,42,0.08);
+}
+html.theme-dark {
+  --surface-primary: #282828;
+  --surface-secondary: #1d2021;
+  --surface-tertiary: #32302f;
+  --text-primary: #ebdbb2;
+  --text-secondary: #d5c4a1;
+  --accent-color: #fabd2f;
+  --accent-muted: #fe8019;
+  --border-color: rgba(235,219,178,0.25);
+}
+body {
+  background-color: var(--surface-secondary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.section,
+.footer,
+.navbar-main,
+.card,
+.box,
+.widget,
+.article,
+blockquote,
+input,
+textarea,
+select,
+.table,
+.menu-list a,
+.pagination-link,
+.pagination-next,
+.pagination-previous {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-theme-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  line-height: 1;
+}
+.navbar-theme-toggle .fa-sun {
+  display: none;
+}
+.navbar-theme-toggle:focus {
+  outline: none;
+}
+.navbar-theme-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
+}
+html.theme-dark body {
+  background-color: var(--surface-secondary);
+  color: var(--text-primary);
+}
+html.theme-dark .navbar-theme-toggle .fa-moon {
+  display: none;
+}
+html.theme-dark .navbar-theme-toggle .fa-sun {
+  display: inline-flex;
+}
+html.theme-dark .navbar-main {
+  background-color: var(--surface-primary);
+  color: var(--text-primary);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+html.theme-dark .navbar-main .navbar-item {
+  color: var(--text-primary);
+}
+html.theme-dark .navbar-main .navbar-item:hover {
+  background-color: rgba(254,128,25,0.12);
+}
+html.theme-dark .section {
+  background-color: var(--surface-secondary);
+}
+html.theme-dark .card,
+html.theme-dark .box,
+html.theme-dark .widget .card {
+  background-color: var(--surface-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+html.theme-dark .menu-list a {
+  background-color: transparent;
+  color: var(--text-secondary);
+}
+html.theme-dark .menu-list a:hover {
+  background-color: rgba(250,189,47,0.1);
+  color: var(--text-primary);
+}
+html.theme-dark .article .content,
+html.theme-dark .article .content p,
+html.theme-dark .article .content li,
+html.theme-dark .article .content span {
+  color: var(--text-primary);
+}
+html.theme-dark .article-title a {
+  color: var(--text-primary);
+}
+html.theme-dark .article-meta,
+html.theme-dark .article-meta a {
+  color: var(--text-secondary);
+}
+html.theme-dark .title,
+html.theme-dark .subtitle,
+html.theme-dark .card .title,
+html.theme-dark .card .subtitle {
+  color: var(--text-primary);
+}
+html.theme-dark .title strong,
+html.theme-dark .subtitle strong,
+html.theme-dark .card .title strong,
+html.theme-dark .card .subtitle strong {
+  color: var(--text-primary);
+}
+html.theme-dark a {
+  color: var(--accent-color);
+}
+html.theme-dark a:hover {
+  color: var(--accent-muted);
+}
+html.theme-dark strong,
+html.theme-dark b,
+html.theme-dark .has-text-weight-semibold {
+  color: var(--text-primary);
+}
+html.theme-dark blockquote {
+  background-color: rgba(40,40,40,0.9);
+  border-left-color: var(--accent-muted);
+  color: var(--text-primary);
+}
+html.theme-dark hr {
+  background-color: var(--border-color);
+}
+html.theme-dark table,
+html.theme-dark th,
+html.theme-dark td {
+  background-color: transparent;
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+html.theme-dark table thead th,
+html.theme-dark table thead td {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+html.theme-dark input,
+html.theme-dark textarea,
+html.theme-dark select,
+html.theme-dark .input,
+html.theme-dark .textarea,
+html.theme-dark .select select {
+  background-color: var(--surface-tertiary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+html.theme-dark .tag-cloud a,
+html.theme-dark .tags .tag {
+  background-color: rgba(250,189,47,0.15);
+  color: var(--text-primary);
+}
+html.theme-dark .footer {
+  background-color: var(--surface-primary);
+  color: var(--text-secondary);
+}
+html.theme-dark .pagination-link,
+html.theme-dark .pagination-next,
+html.theme-dark .pagination-previous {
+  background-color: var(--surface-primary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+html.theme-dark .pagination-link:hover,
+html.theme-dark .pagination-next:hover,
+html.theme-dark .pagination-previous:hover {
+  background-color: rgba(254,128,25,0.12);
+}
+html.theme-dark figure.highlight,
+html.theme-dark pre,
+html.theme-dark code {
+  background-color: rgba(40,40,40,0.85);
+  color: var(--text-primary);
 }
