@@ -9,8 +9,29 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Engineering, outdoors, and technology insights by Amer Zec</description>
-    <pubDate>Sun, 08 Feb 2026 01:03:20 GMT</pubDate>
+    <pubDate>Mon, 13 Apr 2026 07:25:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Load Balancer Redundancy And Failover Mechanisms</title>
+      <link>https://azec.me/2026/04/13/Load-Balancer-Redundancy-And-Failover-Mechanisms/</link>
+      <guid>https://azec.me/2026/04/13/Load-Balancer-Redundancy-And-Failover-Mechanisms/</guid>
+      <pubDate>Mon, 13 Apr 2026 07:09:46 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;p&gt;You may have tried resolving some of the public DNS records of the public facing cloud load-balancers (e.g. AWS ALB) or whatever is
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://azec.me/2026/04/13/Load-Balancer-Redundancy-And-Failover-Mechanisms/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Docker CLI and API version (in)compatibility with Podman Engine</title>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://azec.me/"/>
-  <updated>2026-02-08T01:03:20.736Z</updated>
+  <updated>2026-04-13T07:25:33.990Z</updated>
   <id>https://azec.me/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Load Balancer Redundancy And Failover Mechanisms</title>
+    <link href="https://azec.me/2026/04/13/Load-Balancer-Redundancy-And-Failover-Mechanisms/"/>
+    <id>https://azec.me/2026/04/13/Load-Balancer-Redundancy-And-Failover-Mechanisms/</id>
+    <published>2026-04-13T07:09:46.000Z</published>
+    <updated>2026-04-13T07:25:33.990Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;You may have tried resolving some of the public DNS records of the public facing cloud load-balancers (e.g. AWS ALB) or whatever is
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://azec.me/categories/Software/"/>
+    
+      <category term="System Design" scheme="https://azec.me/categories/Software/System-Design/"/>
+    
+    
+      <category term="Load Balancers" scheme="https://azec.me/tags/Load-Balancers/"/>
+    
+      <category term="Distributed Systems" scheme="https://azec.me/tags/Distributed-Systems/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker CLI and API version (in)compatibility with Podman Engine</title>
